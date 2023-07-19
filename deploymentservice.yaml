@@ -17,7 +17,7 @@ spec:
           image: akbaralidevops/devops-integration # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8087 # The port that the container is running on in the cluster
+            - containerPort: 8888 # The port that the container is running on in the cluster
 
 
 ---
@@ -31,6 +31,6 @@ spec:
     app: spring-boot-k8s
   ports:
     - protocol: "TCP"
-      port: 8087 # The port that the service is running on in the cluster
-      targetPort: 8087 # The port exposed by the service
+      port: 8888 # The port that the service is running on in the cluster
+      targetPort: 8888 # The port exposed by the service
   type: NodePort # type of the service.
