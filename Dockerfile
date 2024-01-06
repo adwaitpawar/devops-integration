@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8888
-ADD target/devopstool.war devopstool.war
-ENTRYPOINT ["java","-jar","/devopstool.war"]
+ADD target/devops-integration.jar /devops-integration.jar
+ENTRYPOINT ["java","-jar","/devops-integration.jar"]
